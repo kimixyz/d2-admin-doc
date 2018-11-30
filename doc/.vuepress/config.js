@@ -42,8 +42,7 @@ module.exports = {
             text: '学习',
             items: [
               { text: '教程', link: '/zh/learn-guide/' },
-              { text: '基础知识', link: '/zh/learn-knowledge/' },
-              { text: '升级指引', link: '/zh/learn-update/' }
+              { text: '基础知识', link: '/zh/learn-knowledge/' }
             ]
           },
           {
@@ -117,7 +116,6 @@ module.exports = {
         ],
         sidebar: {
           '/zh/learn-guide/': sideBarLearnGuide(),
-          '/zh/learn-update/': sideBarLearnUpdate(),
           '/zh/learn-knowledge/': sideBarKnowledge(),
           '/zh/sys-components/': sideBarSysComponents(),
           '/zh/sys-plugins/': sideBarSysPlugins(),
@@ -137,18 +135,6 @@ function sideBarLearnGuide () {
       children: [
         '',
         'getting-started'
-      ]
-    }
-  ]
-}
-
-function sideBarLearnUpdate () {
-  return [
-    {
-      collapsable: false,
-      children: [
-        '',
-        'ice-1.2.6-to-1.2.7.md'
       ]
     }
   ]

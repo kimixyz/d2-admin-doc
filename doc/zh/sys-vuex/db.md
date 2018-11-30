@@ -140,7 +140,7 @@ db
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | vm | vue 实例 | 必选 | Object |  |  |
-| basis | 页面区分依据 | 非 | name, path, fullPath |  | name |
+| basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
 ### 示例
@@ -179,7 +179,7 @@ db
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | vm | vue 实例 | 必选 | Object |  |  |
-| basis | 页面区分依据 | 非 | name, path, fullPath |  | name |
+| basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
 ### 示例
@@ -221,7 +221,7 @@ db
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | vm | vue 实例 | 必选 | Object |  |  |
-| basis | 页面区分依据 | 非 | name, path, fullPath |  | name |
+| basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
 ### 示例
@@ -254,7 +254,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | vm | vue 实例 | 必选 | Object |  |  |
-| basis | 页面区分依据 | 非 | name, path, fullPath |  | name |
+| basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
 ### 示例
@@ -297,7 +297,7 @@ for (const key in data) {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | vm | vue 实例 | 必选 | Object |  |  |
-| basis | 页面区分依据 | 非 | name, path, fullPath |  | name |
+| basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
 ### 示例

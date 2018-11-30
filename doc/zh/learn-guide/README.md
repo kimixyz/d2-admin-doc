@@ -2,7 +2,7 @@
 
 D2Admin 是一个开源的管理系统前端集成方案
 
-<p align="center">
+<p>
   <a><img src="https://img.shields.io/github/release/d2-projects/d2-admin.svg"/></a>
   <a><img src="https://img.shields.io/npm/v/@d2-admin/ice-scaffold.svg"/></a>
   <a href="https://www.travis-ci.org/d2-projects/d2-admin"><img src="https://www.travis-ci.org/d2-projects/d2-admin.svg?branch=master"/></a>
@@ -10,7 +10,7 @@ D2Admin 是一个开源的管理系统前端集成方案
   <a><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"/></a>
 </p>
 
-<p align="center">
+<p>
 	<a><img src="https://img.shields.io/github/issues/d2-projects/d2-admin.svg"/></a>
 	<a><img src="https://img.shields.io/github/issues-closed/d2-projects/d2-admin.svg"/></a>
 	<a><img src="https://img.shields.io/github/issues-pr/d2-projects/d2-admin.svg"/></a>
@@ -18,8 +18,6 @@ D2Admin 是一个开源的管理系统前端集成方案
 	<a><img src="https://img.shields.io/github/forks/d2-projects/d2-admin.svg"/></a>
 	<a><img src="https://img.shields.io/github/stars/d2-projects/d2-admin.svg"/></a>
 </p>
-
-![](https://qiniucdn.fairyever.com/20180921213013.png)
 
 **完整版**
 
@@ -89,40 +87,3 @@ D2Admin 是一个开源的管理系统前端集成方案
 * 日志记录和错误捕捉 `1.3.0 +`
 * 全局菜单搜索 `1.3.0 +`
 * 自定义登录重定向 `1.3.0 +`
-
-## 目录结构
-
-```
-├─ dev
-│  └─ snippets 帮助开发的代码片段
-├─ docs 文档
-├─ public 静态资源
-├─ src
-│  ├─ assets 资源
-│  ├─ components 组件
-│  ├─ i18n 多国语
-│  ├─ layout 布局
-│  ├─ libs 通用库
-│  ├─ menu 菜单
-│  ├─ mock 模拟数据
-│  ├─ pages 页面
-│  ├─ plugin 插件
-│  ├─ router 路由
-│  ├─ store 全局状态
-│  ├─ App.vue
-│  ├─ main.js
-│  └─ setting.js 设置
-├─ tests 单元测试
-├─ .env 环境变量
-├─ .env.development 环境变量 开发环境
-├─ .eslintignore
-├─ .eslintrc.js
-├─ .gitignore
-├─ .postcssrc.js
-├─ LICENSE
-├─ README.md
-├─ babel.config.js
-├─ jest.config.js
-├─ package.json
-└─ vue.config.js 配置文件
-```
