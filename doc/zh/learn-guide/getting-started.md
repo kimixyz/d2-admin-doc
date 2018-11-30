@@ -2,6 +2,8 @@
 
 本文将会带领您从 0 开始使用 D2Admin 创建下面的页面：
 
+> 本示例中的代码和截图可能和您现在手中的版本不同，但大致一样。
+
 ![](https://qiniucdn.fairyever.com/20180729102354.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
 ## 安装环境
