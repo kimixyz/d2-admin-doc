@@ -32,7 +32,7 @@ meta: {
 	name: 'page-cache-off',
 	component: () => import('xxx.vue'),
 	meta: {
-    requiresAuth: true,
+		auth: true,
 		notCache: true,
 		title: '关闭缓存'
 	}
@@ -69,7 +69,7 @@ export default {
 	name: 'page-cache-on',
 	component: () => import('xxx.vue'),
 	meta: {
-    requiresAuth: true,
+		auth: true,
 		title: '开启缓存'
 	}
 }
