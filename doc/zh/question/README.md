@@ -203,7 +203,7 @@ Cookies.set('token', res.token, setting)
 
 ``` js {3-9}
 router.beforeEach((to, from, next) => {
-  if (to.matched.some(r => r.meta.requiresAuth)) {
+  if (to.matched.some(r => r.meta.auth)) {
     if (Cookies.get('token')) {
       next()
     } else {

@@ -168,7 +168,7 @@ export default [
 // layout
 import layoutHeaderAside from '@/layout/header-aside'
 
-const meta = { requiresAuth: true }
+const meta = { auth: true }
 
 /**
  * 在主框架内显示
