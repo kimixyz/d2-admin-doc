@@ -67,6 +67,7 @@ module.exports = {
               { text: 'D2 Admin start kit', link: '/zh/ecosystem-d2-admin-start-kit/' },
               { text: 'D2 Admin ICE', link: '/zh/ecosystem-d2-admin-ice/' },
               { text: 'D2 CRUD', link: '/zh/ecosystem-d2-crud/' },
+              { text: 'D2 Mock Suit', link: '/zh/ecosystem-d2-mock-suit/' },
               { text: 'D2 Ribbons', link: '/zh/ecosystem-d2-ribbons/' }
             ]
           },
@@ -121,7 +122,8 @@ module.exports = {
           '/zh/sys-plugins/': sideBarSysPlugins(),
           '/zh/sys-vuex/': sideBarSysVuex(),
           '/zh/article/': sideBarArticle('版本发布', 'Cookbook', '记录'),
-          '/zh/ecosystem-d2-crud/': sideBarEcosystemD2Crud('D2 CRUD', '使用指南', 'API', '示例')
+          '/zh/ecosystem-d2-crud/': sideBarEcosystemD2Crud('D2 CRUD', '使用指南', 'API', '示例'),
+          '/zh/ecosystem-d2-mock-suit/': sideBarEcosystemD2MockSuit('D2 Mock Suit', '使用指南', 'API')
         }
       }
     }
@@ -286,6 +288,33 @@ function sideBarEcosystemD2Crud (titleReadme, titleGuide, titleApi, titleExample
       collapsable: false,
       children: [
         'example'
+      ]
+    }
+  ]
+}
+
+function sideBarEcosystemD2MockSuit (titleReadme, titleGuide, titleApi) {
+  return [
+    {
+      title: titleReadme,
+      collapsable: false,
+      children: [
+        ''
+      ]
+    },
+    {
+      title: titleGuide,
+      collapsable: false,
+      children: [
+        'guide'
+      ]
+    },
+    {
+      title: titleApi,
+      collapsable: false,
+      children: [
+        'api-1',
+        'api-2'
       ]
     }
   ]
