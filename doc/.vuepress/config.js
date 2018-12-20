@@ -67,7 +67,8 @@ module.exports = {
               { text: 'D2 Admin start kit', link: '/zh/ecosystem-d2-admin-start-kit/' },
               { text: 'D2 Admin ICE', link: '/zh/ecosystem-d2-admin-ice/' },
               { text: 'D2 CRUD', link: '/zh/ecosystem-d2-crud/' },
-              { text: 'D2 Ribbons', link: '/zh/ecosystem-d2-ribbons/' }
+              { text: 'D2 Ribbons', link: '/zh/ecosystem-d2-ribbons/' },
+              { text: 'D2 日报', link: '/zh/ecosystem-d2-daily/' }
             ]
           },
           { text: '文章', link: '/zh/article/' },
