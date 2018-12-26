@@ -1,4 +1,4 @@
-# 配置: form-template
+# 配置: edit-template
 
 ## title
 

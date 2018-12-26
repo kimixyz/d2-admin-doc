@@ -2,15 +2,14 @@
 
 ## 获取表格当前数据
 
-可以通过 `ref` 拿到表格实时数据，也可以通过监听 `@d2-data-change` 事件来获取表格中数据
+可以通过 `ref` 拿到表格实时数据。
 ``` vue
 <template>
   <div>
     <d2-crud
       ref="d2Crud"
       :columns="columns"
-      :data="data"
-      @d2-data-change="handleD2DataChange"/>
+      :data="data"/>
   </div>
 </template>
 
@@ -23,12 +22,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$refs.d2Crud.d2Data) // 获取表格数据
-  },
-  methods: {
-    handleD2DataChange (data) {
-      console.log(data)
-    }
+    console.log(this.$refs.d2Crud.d2CrudData) // 获取表格数据
   }
 }
 </script>

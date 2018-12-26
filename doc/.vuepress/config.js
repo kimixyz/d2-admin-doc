@@ -269,6 +269,7 @@ function sideBarEcosystemD2Crud (titleReadme, titleGuide, titleApi, titleExample
       children: [
         'crud',
         'events',
+        'methods',
         'slots',
         'columns',
         'options',
@@ -276,8 +277,8 @@ function sideBarEcosystemD2Crud (titleReadme, titleGuide, titleApi, titleExample
         'index-row',
         'selection-row',
         'row-handle',
-        'add-button',
-        'form-template',
+        'add-template',
+        'edit-template',
         'form-options',
         'pagination'
       ]

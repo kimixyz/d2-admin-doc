@@ -1,5 +1,5 @@
 # 插槽
 
-## headerButton
+## header
 
 * 说明: 表格头部按钮

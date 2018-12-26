@@ -114,3 +114,13 @@
 
 * 说明: 当分页下一页按钮被用户点击改变当前页后触发
 * 参数: currentPage
+
+## cell-data-change
+
+* 说明: 表格内编辑时单元格数据改变触发
+* 参数: rowIndex,key,value,row
+
+## form-data-change
+
+* 说明: 表单数据改变触发
+* 参数: key,value
