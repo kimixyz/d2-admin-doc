@@ -296,7 +296,7 @@ watch: {
 * xlsx
 
 ``` bash
-npm remove @d2-projects/d2-crud clipboard-polyfill countup.js echarts file-saver github-markdown-css highlight.js marked papaparse quill simplemde v-charts v-contextmenu vue-grid-layout vue-json-tree-view vue-splitpane xlsx --save
+npm remove @d2-projects/d2-crud @d2-projects/vue-table-export @d2-projects/vue-table-import vue-ueditor-wrap clipboard-polyfill countup.js echarts file-saver github-markdown-css highlight.js marked papaparse quill simplemde v-charts v-contextmenu vue-grid-layout vue-json-tree-view vue-splitpane xlsx --save
 ```
 
 ## vue.config.js

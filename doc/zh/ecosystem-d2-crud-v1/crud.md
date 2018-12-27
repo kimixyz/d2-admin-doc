@@ -21,6 +21,13 @@
 * 可选值: 无
 * 默认值: 无
 
+## title
+
+* 说明: 表格标题
+* 类型: String
+* 可选值: 无
+* 默认值: 无
+
 ## loading
 
 * 说明: 表格加载状态
@@ -49,30 +56,23 @@
 * 可选值: 无
 * 默认值: false
 
-## add-title
+## add-mode
 
-* 说明: 新增表单标题
-* 类型: String
+* 说明: 新增模式
+* 类型: Boolean
 * 可选值: 无
-* 默认值: 无
+* 默认值: false
 
-## add-template
+## add-button
 
-* 说明: 新增表单数据模板，具体配置请参考 [add-template](./add-template.md)
+* 说明: 新增按钮配置，具体配置请参考 [add-button](./add-button.md)
 * 类型: Object
 * 可选值: 无
 * 默认值: 无
 
-## edit-title
+## form-template
 
-* 说明: 编辑表单标题
-* 类型: String
-* 可选值: 无
-* 默认值: 无
-
-## edit-template
-
-* 说明: 编辑表单数据模板，具体配置请参考 [edit-template](./edit-template.md)
+* 说明: 表单数据模板，具体配置请参考 [form-template](./form-template.md)
 * 类型: Object
 * 可选值: 无
 * 默认值: 无

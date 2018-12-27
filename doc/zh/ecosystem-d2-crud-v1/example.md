@@ -37,6 +37,4 @@
 | 表单校验 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo22) |
 | 表格内编辑 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo23) |
 | 表格自定义组件 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo25) |
-| 表单事件监听 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo30) |
 | 表单自定义组件 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo26) |
-| CRUD事件 | [:link: Link](https://d2admin.fairyever.com/#/demo/d2-crud/demo31) |

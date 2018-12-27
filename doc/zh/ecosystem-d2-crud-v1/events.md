@@ -85,11 +85,6 @@
 * 说明: 当表格修改数据的时候会触发该事件
 * 参数: index, row, done
 
-## dialog-open
-
-* 说明: 当表格新增或修改打开模态框时
-* 参数: {mode, row}
-
 ## dialog-cancel
 
 * 说明: 当表格取消新增或修改数据的时候会触发该事件
@@ -119,13 +114,3 @@
 
 * 说明: 当分页下一页按钮被用户点击改变当前页后触发
 * 参数: currentPage
-
-## cell-data-change
-
-* 说明: 表格内编辑时单元格数据改变触发
-* 参数: rowIndex,key,value,row
-
-## form-data-change
-
-* 说明: 表单数据改变触发
-* 参数: key,value
