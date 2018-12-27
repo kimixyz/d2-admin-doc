@@ -67,6 +67,7 @@ module.exports = {
               { text: 'D2 Admin start kit', link: '/zh/ecosystem-d2-admin-start-kit/' },
               { text: 'D2 Admin ICE', link: '/zh/ecosystem-d2-admin-ice/' },
               { text: 'D2 CRUD', link: '/zh/ecosystem-d2-crud/' },
+              { text: 'D2 CRUD 1.x', link: '/zh/ecosystem-d2-crud-v1/' },
               { text: 'D2 Ribbons', link: '/zh/ecosystem-d2-ribbons/' },
               { text: 'D2 日报', link: '/zh/ecosystem-d2-daily/' }
             ]
@@ -122,7 +123,8 @@ module.exports = {
           '/zh/sys-plugins/': sideBarSysPlugins(),
           '/zh/sys-vuex/': sideBarSysVuex(),
           '/zh/article/': sideBarArticle('版本发布', 'Cookbook', '记录'),
-          '/zh/ecosystem-d2-crud/': sideBarEcosystemD2Crud('D2 CRUD', '使用指南', 'API', '示例')
+          '/zh/ecosystem-d2-crud/': sideBarEcosystemD2Crud('D2 CRUD', '使用指南', 'API', '示例', '迁移'),
+          '/zh/ecosystem-d2-crud-v1/': sideBarEcosystemD2CrudV1('D2 CRUD 1.x', '使用指南', 'API', '示例')
         }
       }
     }
@@ -247,7 +249,60 @@ function sideBarArticle (titleUpdate, titleCookbook, titleNote) {
   ]
 }
 
-function sideBarEcosystemD2Crud (titleReadme, titleGuide, titleApi, titleExample) {
+function sideBarEcosystemD2Crud (titleReadme, titleGuide, titleApi, titleExample, migration) {
+  return [
+    {
+      title: titleReadme,
+      collapsable: false,
+      children: [
+        ''
+      ]
+    },
+    {
+      title: titleGuide,
+      collapsable: false,
+      children: [
+        'guide'
+      ]
+    },
+    {
+      title: titleApi,
+      collapsable: false,
+      children: [
+        'crud',
+        'events',
+        'methods',
+        'slots',
+        'columns',
+        'options',
+        'loading-options',
+        'index-row',
+        'selection-row',
+        'row-handle',
+        'add-template',
+        'edit-template',
+        'form-options',
+        'pagination'
+      ]
+    },
+    {
+      title: titleExample,
+      collapsable: false,
+      children: [
+        'example'
+      ]
+    },
+    {
+      title: migration,
+      collapsable: false,
+      children: [
+        'migration'
+      ]
+    }
+  ]
+}
+
+function sideBarEcosystemD2CrudV1 (titleReadme, titleGuide, titleApi, titleExample) {
   return [
     {
       title: titleReadme,

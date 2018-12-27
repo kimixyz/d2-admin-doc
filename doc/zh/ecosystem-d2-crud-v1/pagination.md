@@ -1,20 +1,13 @@
 # 配置: pagination
 
-## currentPage
-
-* 说明: 表格当前页
-* 类型: Number
-* 可选值: 无
-* 默认值: 无
-
 ## pageSize
 
-* 说明: 表格每页行数
+* 说明: 表格头部按钮
 * 类型: Number
 * 可选值: 无
 * 默认值: 10
 
-## pageCount
+## pagerCount
 
 * 说明: 页码按钮的数量，当总页数超过该值时会折叠
 * 类型: Number

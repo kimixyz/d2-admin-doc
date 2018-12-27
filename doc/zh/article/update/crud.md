@@ -156,7 +156,7 @@ export default {
       index-row
       selection-row
       :rowHandle="rowHandle"
-      :form-template="formTemplate"
+      :edit-template="editTemplate"
       @row-edit="handleRowEdit"
       @row-remove="handleRowRemove"/>
   </div>
@@ -209,7 +209,7 @@ export default {
             size: 'mini'
           }
         },
-        formTemplate: {
+        editTemplate: {
           date: {
             title: '日期',
             value: ''
