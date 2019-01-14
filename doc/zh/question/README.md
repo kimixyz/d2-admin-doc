@@ -327,9 +327,9 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ## 打包后无法运行
 
-打包后会生成 dist 文件夹，请在本地开启一个 http 服务来运行打包后的项目。
+打包后会生成 dist 文件夹，**请在本地开启一个 http 服务来运行打包后的项目**。
 
-如果您不清楚如何操作，建议您使用 [browsersync](http://www.browsersync.cn/)
+如果您不清楚如何操作，建议您使用 [browsersync](http://www.browsersync.cn/) 快速达到目的。
 
 ![](https://qiniucdn.fairyever.com/20180821144014.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
