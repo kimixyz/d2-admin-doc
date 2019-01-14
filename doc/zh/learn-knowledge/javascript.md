@@ -19,11 +19,11 @@ JavaScript 比较常见的运行环境就是 Web 浏览器，比如 Chrome 直�
 
 ### 变量定义
 
-* let 定义普通变量（推荐），详情：<http://es6.ruanyifeng.com/#docs/let#let-命令>。
-* const 定义常量，后面只能读不能写，详情：<http://es6.ruanyifeng.com/#docs/let#const-命令>。
+* let 定义普通变量（推荐），详情：[链接](http://es6.ruanyifeng.com/#docs/let#let-命令)。
+* const 定义常量，后面只能读不能写，详情：[链接](http://es6.ruanyifeng.com/#docs/let#const-命令)。
 * var 定义普通变量，不建议使用。
 
-var 由于缺失某些特性，不建议使用，关于 let 和 var 的对比，详情见：<https://www.zhihu.com/question/47456978> 。
+var 由于缺失某些特性，不建议使用，关于 let 和 var 的对比，详情见：[链接](https://www.zhihu.com/question/47456978)。
 
 由于 JavaScript 是弱类型语言，因此你不需要声明变量的数据类型。
 
@@ -45,7 +45,7 @@ int x = 20;
 
 ### 数据类型
 
-数据类型基础知识详见：<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures> ，这里针对常用的几种进行重点讲解。
+数据类型基础知识详见：[链接](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures) ，这里针对常用的几种进行重点讲解。
 
 基础类型包括：Undefined、Null、Boolean、Number、String，引用类型包括：Object、Array、Function。当一个变量值为引用类型的时候，直接赋值其他变量传递的是引用。同样的，引用的数据在某个地方改变了值会影响所有调用这个变量的地方。这跟 Java 里面引用概念一样。
 
@@ -74,7 +74,7 @@ let a = {};
 console.log(a.b); // -> undefined
 ```
 
-null 表示空值。它不同于 undefined，它是有值的只不过是一个空值，而 undefined 是未定义的临时兜底的缺省值。undefined 和 null 具体的区别请参见：<http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html> 。
+null 表示空值。它不同于 undefined，它是有值的只不过是一个空值，而 undefined 是未定义的临时兜底的缺省值。undefined 和 null 具体的区别请参见：[链接](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)。
 
 #### number、boolean、string
 
@@ -125,7 +125,7 @@ Java：
 list.get(0);
 ```
 
-数组是有序的，遍历数组需要使用流程控制语句 for 等。为了方便，array 内置了一些数组常用操作方法可以简化常用操作，详情可见：<http://yujiangshui.com/codewars-weekly1/#善用-Array-的函数>。
+数组是有序的，遍历数组需要使用流程控制语句 for 等。为了方便，array 内置了一些数组常用操作方法可以简化常用操作，详情可见：[链接](http://yujiangshui.com/codewars-weekly1/#善用-Array-的函数)。
 
 比较常用 [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 和 [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 方法，可以重点关注下用法。
 
@@ -161,7 +161,7 @@ list.forEach((val) -> {
 });
 ```
 
-相比 Java 的 add 操作，JavaScript array 的出栈入栈删除的方法名略有不同，常见的 push 入栈、pop 出栈，具体的参照 <http://javascript.ruanyifeng.com/stdlib/array.html> 。
+相比 Java 的 add 操作，JavaScript array 的出栈入栈删除的方法名略有不同，常见的 push 入栈、pop 出栈，具体的参照 [链接](http://javascript.ruanyifeng.com/stdlib/array.html)。
 
 #### object
 
@@ -203,7 +203,7 @@ let key = 'age';
 obj[key]; // -> 18
 ```
 
-因此可以用来做 key value 的数据映射使用。由于弱类型存储的值可以多种多样，比 Java 使用起来要容易一些。详情：<http://www.w3school.com.cn/js/js_objects.asp>
+因此可以用来做 key value 的数据映射使用。由于弱类型存储的值可以多种多样，比 Java 使用起来要容易一些。详情：[链接](http://www.w3school.com.cn/js/js_objects.asp)
 
 #### function
 
@@ -257,20 +257,20 @@ list.forEach((a, b) => {
 
 这几个方法详情：
 
-* <http://www.jianshu.com/p/56a9c2d11adc> 
+* [链接](http://www.jianshu.com/p/56a9c2d11adc)
 
 箭头函数声明和特性：
 
-* <http://es6.ruanyifeng.com/#docs/function#箭头函数>
+* [链接](http://es6.ruanyifeng.com/#docs/function#箭头函数)
 
 函数作用域：
 
-* <http://es6.ruanyifeng.com/#docs/function#作用域>
-* <http://www.w3school.com.cn/js/pro_js_object_scope.asp>
+* [链接](http://es6.ruanyifeng.com/#docs/function#作用域)
+* [链接](http://www.w3school.com.cn/js/pro_js_object_scope.asp)
 
 设置函数参数的默认值：
 
-* <http://es6.ruanyifeng.com/#docs/function#参数默认值的位置>
+* [链接](http://es6.ruanyifeng.com/#docs/function#参数默认值的位置)
 
 #### 类型转换
 
@@ -346,12 +346,12 @@ console.log(!![].length); // -> false
 ### 流程控制、比较、运算符等
 
 * 流程控制
-  * If：<http://www.w3school.com.cn/js/js_if_else.asp>
-  * Switch：<http://www.w3school.com.cn/js/js_switch.asp>
-  * For: <http://www.w3school.com.cn/js/js_loop_for.asp>
-  * While: <http://www.w3school.com.cn/js/js_loop_while.asp>
-* 比较：<http://www.w3school.com.cn/js/js_comparisons.asp>
-* 运算符：<http://www.w3school.com.cn/js/js_operators.asp>
+  * If：[链接](http://www.w3school.com.cn/js/js_if_else.asp)
+  * Switch：[链接](http://www.w3school.com.cn/js/js_switch.asp)
+  * For: [链接](http://www.w3school.com.cn/js/js_loop_for.asp)
+  * While: [链接](http://www.w3school.com.cn/js/js_loop_while.asp)
+* 比较：[链接](http://www.w3school.com.cn/js/js_comparisons.asp)
+* 运算符：[链接](http://www.w3school.com.cn/js/js_operators.asp)
 
 基本跟 Java 一样，下面介绍几个 JavaScript 比较常用、特殊的知识点：
 
@@ -408,10 +408,10 @@ let aa = {
 };
 ```
 
-相当于把某个对象拆开分别赋值，遇到同样的 key 后面内容会覆盖前面的。详情请看：<http://es6.ruanyifeng.com/#docs/object#对象的扩展运算符>
+相当于把某个对象拆开分别赋值，遇到同样的 key 后面内容会覆盖前面的。详情请看：[链接](http://es6.ruanyifeng.com/#docs/object#对象的扩展运算符)
 
 ::: tip 原文
-<https://alibaba.github.io/ice/docs/basis/intro-javascript>
+[链接](https://alibaba.github.io/ice/docs/basis/intro-javascript)
 
 有少许修改。
 :::
