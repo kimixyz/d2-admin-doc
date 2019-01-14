@@ -148,7 +148,7 @@ yarn
 yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
 ```
 
-## 如何关闭 ESLint
+## 关闭 ESLint
 
 由于使用者技术水平参差不齐，有些朋友希望在开发时关闭 ESLint，虽然我不建议这样做，在这里也给出以下方法，或者你也可以在下面的链接里找到答案
 
@@ -162,7 +162,7 @@ yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
 
 在根目录中的 `.eslintrc.js` 找到 `'@vue/standard'` 并注释掉，修改后重启本地服务。
 
-## 如何修改 ESLint 规则
+## 修改 ESLint 规则
 
 在根目录中的 `.eslintrc.js` 配置规则
 
