@@ -29,7 +29,7 @@ D2Admin 是一个开源的管理系统前端集成方案
 
 [Github 仓库](https://github.com/d2-projects/d2-admin-start-kit) | 
 [码云仓库](https://gitee.com/fairyever/d2-admin-start-kit) | 
-[预览地址](https://fairyever.gitee.io/d2-admin-start-kit-preview/#/index)
+[预览地址](https://start-kit.d2admin.fairyever.com)
 
 **飞冰物料**
 
