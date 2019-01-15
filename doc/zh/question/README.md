@@ -185,6 +185,13 @@ rules: {
 * [规则列表 中文](http://eslint.cn/docs/rules/)
 * [规则列表 英文](https://eslint.org/docs/rules/)
 
+## 侧边栏等部分无法点击
+
+如果您打开了 Chrome 的开发者工具并且模拟了非 PC 设备（或者您真的是在 ipad 上访问的项目），在 [1.6.11](https://github.com/d2-projects/d2-admin/releases/tag/1.6.11) 版本之前，侧边栏和优化滚动模式的 `d2-container` 组件将会无法点击。请按照 [0c8d38d](https://github.com/d2-projects/d2-admin/commit/0c8d38d7b690ee6221d491ef0aea0f943f3cb131) 修改您的代码。
+
+> 造成这个问题的原因是 better-scroll 插件会默认禁止 click 事件。  
+> 参见 [《better-scroll 文档 | options.click》](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/options.html#click)
+
 ## 无法跳转路由
 
 有可能你在 D2Admin 的基础上进行你的开发时，发现在登录页面进行
