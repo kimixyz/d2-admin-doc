@@ -14,8 +14,9 @@
 | better-scroll | 使用自定义滚动条 | 非 | Boolean |  | false |
 | better-scroll-options | 自定义滚动条配置 | 非 | Object | [better-scroll](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/options.html) | 见下 |
 | scroll-delay | scroll 事件的节流间隔(ms) 只在 `better-scroll: false` 时有效 | 非 | Number |  | 10 |
+| filename | 当前文件在项目中的路径，更多介绍见下 | 非 | String |  |  |
 
-`附` better-scroll-options 默认值
+`附` **better-scroll-options 默认值**
 
 ``` js
 {
@@ -26,13 +27,28 @@
 	}
 }
 ```
+
 设置的参数值会和默认值使用 `Object.assign` 合并，最后在初始化 [better-scroll](https://github.com/ustbhuangyi/better-scroll) 时传入
 
-下面的介绍中 **主区域** 范围见下
+`附` **filename 参数的用途**
+
+此参数是为[在线预览](https://d2admin.fairyever.com)中页面右下角的查看源码链接功能准备。传入的值为当前页面组件在项目中的文件路径，这样可以保证在点击按钮时可以跳转到正确的 github 文件地址。
+
+您应该在开发过程中忽略这个参数，不要赋值，页面容器组件右下角的跳转按钮也会自动消失。
+
+::: tip
+在 [1.6.13](https://github.com/d2-projects/d2-admin/releases/tag/1.6.13) 之后，如果 filename 参数不传值，跳转按钮才会自动隐藏。如果您使用之前版本，如有需要请参照此次更新介绍修改您的代码。
+:::
+
+## 模式
+
+该组件一共分为三种模式分别适应不同类型页面的需要，详细介绍见下。
+
+`附` 下面的介绍中 **主区域** 范围如图所示：
 
 ![](./image/container/space-main@2x.png)
 
-原生滚动条和自定义滚动条的区别
+`附` 原生滚动条和自定义滚动条的区别
 
 ![](./image/container/scrollbar-type@2x.png)
 
