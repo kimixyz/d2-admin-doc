@@ -16,11 +16,16 @@ sidebar: auto
 
 ## 路由缓存
 
-路由缓存默认为开启状态，页面组件会被 keepAlive，如果想禁用某个页面的缓存，请在该路由配置的 meta 中加入：
+开启缓存的页面可以在切换后保留页面数据。效果预览：
 
-``` js
+* [开启缓存](https://d2admin.fairyever.com/#/demo/playground/page-cache/on)
+* [带参路由缓存1](https://d2admin.fairyever.com/#/demo/playground/page-cache/params/1) | [带参路由缓存2](https://d2admin.fairyever.com/#/demo/playground/page-cache/params/2)
+
+路由缓存默认为关闭状态，如果想启用某个页面的缓存，请在该路由配置的 meta 中加入：
+
+``` js {2}
 meta: {
-  notCache: true
+  cache: true
 }
 ```
 
@@ -28,24 +33,24 @@ meta: {
 
 ``` js {7}
 {
-	path: '/page-cache/off',
-	name: 'page-cache-off',
+	path: '/page-cache/on',
+	name: 'page-cache-on',
 	component: () => import('xxx.vue'),
 	meta: {
 		auth: true,
-		notCache: true,
-		title: '关闭缓存'
+		cache: true,
+		title: '开启缓存'
 	}
 }
 ```
 
-虽然所有的路由默认都是开启缓存的，但是还需要遵守一个约定才可以正确缓存页面：
+路由配置上开启缓存之后，还需要遵守一个约定才可以正确缓存页面：
 
-**页面组件必须有 name 字段，并且 name 字段的值和该路由的 name 字段一致。**
+**页面组件必须有 name 字段，并且字段的值和该路由的 name 字段一致。请注意下面的高亮行。**
 
 例如：
 
-页面文件：
+* 页面文件：
 
 ``` vue {9}
 <template>
@@ -61,7 +66,7 @@ export default {
 </script>
 ```
 
-路由设置：
+* 路由设置：
 
 ``` js {3}
 {
@@ -70,6 +75,7 @@ export default {
 	component: () => import('xxx.vue'),
 	meta: {
 		auth: true,
+		cache: true,
 		title: '开启缓存'
 	}
 }

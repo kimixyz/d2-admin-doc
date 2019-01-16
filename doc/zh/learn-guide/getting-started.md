@@ -2,7 +2,9 @@
 
 本文将会带领您从 0 开始使用 D2Admin 创建下面的页面：
 
-> 本示例中的代码和截图可能和您现在手中的版本不同，但大致一样。
+::: tip
+本示例中的代码和截图可能和您现在手中的版本不同，但操作思路一样。
+:::
 
 ![](https://qiniucdn.fairyever.com/20180729102354.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
@@ -69,6 +71,28 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ## 下载项目
 
+### 手动下载
+
+前往仓库下载源码：
+
+* 完整版仓库 [Github](https://github.com/d2-projects/d2-admin) | [码云](https://gitee.com/fairyever/d2-admin)
+
+* 简化版起始模板 [Github](https://github.com/d2-projects/d2-admin-start-kit) | [码云](https://gitee.com/fairyever/d2-admin-start-kit)
+
+挑选一个您喜欢的网站 Fork 代码到您的仓库，然后下载或克隆。
+
+::: tip
+如果使用 Github 下载过慢，请参考 [常见问题](/zh/question/)。
+:::
+
+我的建议是使用 **简化版起始模板** 因为在完整版的基础上做减法，要比在简化版基础上做加法复杂。
+
+下面的步骤都以简化版起始模板为基础演示如何使用。
+
+下载完成后您会得到这些资源（以 1.1.5 版本为例）：
+
+![](https://qiniucdn.fairyever.com/20180729091149.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
+
 ### d2-admin-cli
 
 [D2 Admin CLI](https://github.com/d2-projects/d2-admin-cli) 是一个基于 `D2 Admin` 的脚手架系统，可以快速生成 `D2 Admin` 项目。
@@ -115,28 +139,6 @@ d2 doc
 # 或者
 d2 d
 ```
-
-### 手动下载
-
-如果你不喜欢使用命令行工具，可以前往仓库下载源码：
-
-* 完整版仓库 [Github](https://github.com/d2-projects/d2-admin) | [码云](https://gitee.com/fairyever/d2-admin)
-
-* 简化版起始模板 [Github](https://github.com/d2-projects/d2-admin-start-kit) | [码云](https://gitee.com/fairyever/d2-admin-start-kit)
-
-挑选一个您喜欢的网站 Fork 代码到您的仓库，然后下载或克隆。
-
-::: tip
-如果使用 Github 下载过慢，请参考 [常见问题](/zh/question/)。
-:::
-
-我的建议是使用 **简化版起始模板** 因为在完整版的基础上做减法，要比在简化版基础上做加法复杂。
-
-下面的步骤都以简化版起始模板为基础演示如何使用。
-
-下载完成后您会得到这些资源（以 1.1.5 版本为例）：
-
-![](https://qiniucdn.fairyever.com/20180729091149.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
 ## 安装依赖
 
