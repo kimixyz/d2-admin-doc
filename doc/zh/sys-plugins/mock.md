@@ -223,4 +223,14 @@ Mock.mock({
 
 1. `npm remove mockjs --save`
 2. 删除 `src/mock`
-3. 删除 main.js 中的 mock 引用
+3. 删除 vue.config.js 中相关代码
+
+``` js
+// 判断环境加入模拟数据
+const entry = config.entry('app')
+if (process.env.VUE_APP_BUILD_MODE !== 'nomock') {
+  entry
+  .add('@/mock')
+  .end()
+}
+```
