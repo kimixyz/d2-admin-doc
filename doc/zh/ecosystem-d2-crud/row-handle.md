@@ -105,6 +105,13 @@
 * 可选值: 无
 * 默认值: 无
 
+## remove.confirm
+
+* 说明: 是否弹出confirm框
+* 类型: Boolean
+* 可选值: 无
+* 默认值: 无
+
 ## remove.confirmTitle
 
 * 说明: 删除confirm框的标题
