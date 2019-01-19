@@ -209,13 +209,16 @@ npm run serve
   path: '/page-demo',
   name: 'page-demo',
   component: () => import('@/pages/page-demo'),
-  meta: { meta, title: '新建示例' }
+  meta: {
+    auth: true,
+    title: '新建示例'
+  }
 }
 ```
 
 最后 `frameIn` 变量应该是这样：
 
-``` js {20-25}
+``` js {23-31}
 const frameIn = [
   {
     path: '/',
@@ -233,13 +236,19 @@ const frameIn = [
         path: '/page3',
         name: 'page3',
         component: () => import('@/pages/page3'),
-        meta: { meta, title: '页面 3' }
+        meta: {
+          auth: true, 
+          title: '页面 3'
+        }
       },
       {
         path: '/page-demo',
         name: 'page-demo',
         component: () => import('@/pages/page-demo'),
-        meta: { meta, title: '新建示例' }
+        meta: {
+          auth: true, 
+          title: '新建示例'
+        }
       }
     ]
   }
