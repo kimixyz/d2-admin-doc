@@ -165,7 +165,6 @@ router.afterEach(to => {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | tagName | 要关闭的标签名字 | 必选 | String |  |  |
-| vm | vue 实例 | 必选 | Object |  |  |
 
 ### 返回
 
@@ -175,8 +174,7 @@ promise
 
 ``` js
 this.$store.dispatch('d2admin/page/close', {
-  tagName: 'route-name',
-  vm: this
+  tagName: 'route-name'
 })
 ```
 
