@@ -189,7 +189,6 @@ this.$store.dispatch('d2admin/page/close', {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | pageSelect | 当前选中的 tagName | 必选 | String |  |  |
-| vm | vue 实例 | 必选 | Object |  |  |
 
 ### 返回
 
@@ -199,8 +198,7 @@ promise
 
 ``` js
 this.$store.dispatch('d2admin/page/closeLeft', {
-  pageSelect: 'route-name',
-  vm: this
+  pageSelect: 'route-name'
 })
 ```
 
@@ -215,7 +213,6 @@ this.$store.dispatch('d2admin/page/closeLeft', {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | pageSelect | 当前选中的 tagName | 必选 | String |  |  |
-| vm | vue 实例 | 必选 | Object |  |  |
 
 ### 返回
 
@@ -225,8 +222,7 @@ promise
 
 ``` js
 this.$store.dispatch('d2admin/page/closeRight', {
-  pageSelect: 'route-name',
-  vm: this
+  pageSelect: 'route-name'
 })
 ```
 
@@ -241,7 +237,6 @@ this.$store.dispatch('d2admin/page/closeRight', {
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
 | pageSelect | 当前选中的 tagName | 必选 | String |  |  |
-| vm | vue 实例 | 必选 | Object |  |  |
 
 ### 返回
 
@@ -251,8 +246,7 @@ promise
 
 ``` js
 this.$store.dispatch('d2admin/page/closeOther', {
-  pageSelect: 'route-name',
-  vm: this
+  pageSelect: 'route-name'
 })
 ```
 
@@ -264,9 +258,7 @@ this.$store.dispatch('d2admin/page/closeOther', {
 
 ### 参数
 
-| 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
-| --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
+无
 
 ### 返回
 
@@ -275,9 +267,7 @@ promise
 ### 示例
 
 ``` js
-this.$store.dispatch('d2admin/page/closeAll', {
-  vm: this
-})
+this.$store.dispatch('d2admin/page/closeAll')
 ```
 
 ## mutations.keepAliveRefresh
