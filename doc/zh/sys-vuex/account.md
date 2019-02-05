@@ -12,17 +12,15 @@ account 负责实现用户的登录和注销逻辑。
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
-| username | 账号 | 必选 | String |  |  |
-| password | 密码 | 必选 | String |  |  |
+| username | 账号 | 必选 | String |  | 空字符串 |
+| password | 密码 | 必选 | String |  | 空字符串 |
 
 ### 示例
 
 ``` js
 this.$store.dispatch('d2admin/account/login', {
-  vm: this,
-  username: this.formLogin.username,
-  password: this.formLogin.password
+  username: 'admin',
+  password: 'my-password'
 })
 ```
 
@@ -30,9 +28,8 @@ this.$store.dispatch('d2admin/account/login', {
 
 ``` js
 this.$store.dispatch('d2admin/account/login', {
-  vm: this,
-  username: this.formLogin.username,
-  password: this.formLogin.password
+  username: 'admin',
+  password: 'my-password'
 })
   .then(() => {
     this.$router.replace('/foo/path')
@@ -49,14 +46,12 @@ this.$store.dispatch('d2admin/account/login', {
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
 | confirm | 注销确认 | 非 | Boolean |  | false |
 
 ### 示例
 
 ``` js
 this.$store.dispatch('d2admin/account/logout', {
-  vm: this,
   confirm: true
 })
 ```
