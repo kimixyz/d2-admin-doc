@@ -23,12 +23,8 @@ D2Admin 的 util 模块位置：`d2-admin/src/libs/util.js`
 **使用示例：**
 
 ``` js
-util.cookies.set({
-  name: 'name',
-  value: 'value',
-  setting: {
-    expires: 365
-  }
+util.cookies.set('name', 'value', {
+  expires: 365
 })
 ```
 
@@ -37,12 +33,8 @@ util.cookies.set({
 util.cookies 内部使用 js-cookie 进行操作，并且在 cookie 名称上多做了一层逻辑封装，例如
 
 ``` js
-util.cookies.set({
-  name: 'name',
-  value: 'value',
-  setting: {
-    expires: 365
-  }
+util.cookies.set('name', 'value', {
+  expires: 365
 })
 ```
 
@@ -60,9 +52,9 @@ util.cookies.get('name')
 
 最后你的 cookie 信息实际上可能类似这样（举例）：
 
-* `d2admin-1.1.5-name` : `FairyEver`
-* `d2admin-1.1.5-uuid` : `h8dsafy98du9f6yadsyf`
-* `d2admin-1.1.5-token` : `dys87f89dsafy89adsh`
+* `d2admin-1.6.15-name` : `FairyEver`
+* `d2admin-1.6.15-uuid` : `h8dsafy98du9f6yadsyf`
+* `d2admin-1.6.15-token` : `dys87f89dsafy89adsh`
 
 这样做的好处是可以保证如果您的 D2Admin 升级到了新版本，打开时使用的数据一定是重新初始化的，而您在使用 cookie 时无论赋值还是取值，都觉察不出这层包装
 
