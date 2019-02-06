@@ -2,18 +2,29 @@
 
 本框架集成了数据导出功能，并包装成插件
 
-## 注册插件
+::: tip 源代码
+[https://github.com/d2-projects/vue-table-export](https://github.com/d2-projects/vue-table-export)
+:::
+
+## 安装
+
+``` sh
+npm i @d2-projects/vue-table-export --save
+```
+
+## 导入
 
 ``` js
-import pluginExport from '@/plugin/export'
+import Vue from 'vue'
+import pluginExport from '@d2-projects/vue-table-export'
 Vue.use(pluginExport)
 ```
 
-之后就可以在组件中使用 `this.$export` 来调用导出功能
-
 ::: tip
-d2admin 已经帮你注册好，可以直接使用，无需写上面的代码
+如果您使用的是完整版，d2admin 已经帮您安装注册好，可以直接使用，无需写上面的代码
 :::
+
+之后就可以在组件中使用 `this.$export` 来调用导出功能
 
 ## 导出 csv
 

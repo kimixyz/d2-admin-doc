@@ -2,18 +2,29 @@
 
 本框架集成了数据导入功能，并包装成插件
 
-## 注册插件
+::: tip 源代码
+[https://github.com/d2-projects/vue-table-import](https://github.com/d2-projects/vue-table-import)
+:::
+
+## 安装
+
+``` sh
+npm i @d2-projects/vue-table-import --save
+```
+
+## 导入
 
 ``` js
-import pluginImport from '@/plugin/import'
+import Vue from 'vue'
+import pluginImport from '@d2-projects/vue-table-import'
 Vue.use(pluginImport)
 ```
 
-之后就可以在组件中使用 `this.$import` 来调用导出功能
-
 ::: tip
-d2admin 已经帮你注册好，可以直接使用，无需写上面的代码
+如果您使用的是完整版，d2admin 已经帮你注册好，可以直接使用，无需写上面的代码
 :::
+
+之后就可以在组件中使用 `this.$import` 来调用导出功能
 
 ## 导入 csv
 
