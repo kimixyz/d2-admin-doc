@@ -48,7 +48,7 @@ this.$store.getters['d2admin/log/lengthError']
 | --- | --- | --- | --- | --- | --- |
 | type | 日志类型 | 非 | String | log, error | log |
 | err | 错误对象 | 非 | Error |  |  |
-| vm | vue 实例 | 非 | Object |  |  |
+| instance | vue 实例 | 非 | Object |  |  |
 | info | 信息 | 非 | String |  |  |
 
 ### 示例
@@ -67,12 +67,12 @@ this.$store.dispatch('d2admin/log/add', {
 import store from '@/store'
 export default {
   install (Vue, options) {
-    Vue.config.errorHandler = function (err, vm, info) {
+    Vue.config.errorHandler = function (err, instance, info) {
       Vue.nextTick(() => {
         store.dispatch('d2admin/log/add', {
           type: 'error',
           err,
-          vm,
+          instance,
           info
         })
       })

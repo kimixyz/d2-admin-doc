@@ -139,7 +139,6 @@ db
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
 | basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
@@ -148,9 +147,7 @@ db
 不区分用户存储：
 
 ``` js
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('keyName', 'value')
   .write()
@@ -160,7 +157,6 @@ db
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this,
   user: true
 })
 db
@@ -178,7 +174,6 @@ db
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
 | basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
@@ -187,16 +182,13 @@ db
 不区分用户清空：
 
 ``` js
-this.$store.dispatch('d2admin/db/databasePageClear', {
-  vm: this
-})
+this.$store.dispatch('d2admin/db/databasePageClear')
 ```
 
 区分用户清空：
 
 ``` js
 this.$store.dispatch('d2admin/db/databasePageClear', {
-  vm: this,
   user: true
 })
 ```
@@ -220,7 +212,7 @@ db
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
+| instance | vue 实例 | 必选 | Object |  |  |
 | basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
@@ -230,7 +222,7 @@ db
 
 ``` js
 this.$store.dispatch('d2admin/db/pageSet', {
-  vm: this
+  instance: this
 })
 ```
 
@@ -238,7 +230,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 
 ``` js
 this.$store.dispatch('d2admin/db/pageSet', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -253,7 +245,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
+| instance | vue 实例 | 必选 | Object |  |  |
 | basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
@@ -264,7 +256,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 ``` js
 // 获取数据
 const data = await this.$store.dispatch('d2admin/db/pageGet', {
-  vm: this
+  instance: this
 })
 // 将数据还原到页面
 for (const key in data) {
@@ -277,7 +269,7 @@ for (const key in data) {
 ``` js
 // 获取数据
 const data = await this.$store.dispatch('d2admin/db/pageGet', {
-  vm: this,
+  instance: this,
   user: true
 })
 // 将数据还原到页面
@@ -296,7 +288,6 @@ for (const key in data) {
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| vm | vue 实例 | 必选 | Object |  |  |
 | basis | 页面区分依据 | 非 | name, path, fullPath |  | fullPath |
 | user | 是否区分用户 | 非 | Boolean |  | false |
 
@@ -305,16 +296,13 @@ for (const key in data) {
 不区分用户清空：
 
 ``` js
-this.$store.dispatch('d2admin/db/pageClear', {
-  vm: this
-})
+this.$store.dispatch('d2admin/db/pageClear')
 ```
 
 区分用户清空：
 
 ``` js
 this.$store.dispatch('d2admin/db/pageClear', {
-  vm: this,
   user: true
 })
 ```

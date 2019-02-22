@@ -23,6 +23,12 @@ D2Admin 的 util 模块位置：`d2-admin/src/libs/util.js`
 **使用示例：**
 
 ``` js
+util.cookies.set('name', 'value')
+```
+
+附带其它选项
+
+``` js
 util.cookies.set('name', 'value', {
   expires: 365
 })

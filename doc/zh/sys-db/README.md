@@ -101,7 +101,7 @@ const myName = db.get('myName').value()
 
 ``` js {5}
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 db
   .set('pageName', 'page1')
@@ -112,7 +112,7 @@ db
 
 ``` js {5}
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 db
   .set('pageName', 'page2')
@@ -123,7 +123,7 @@ db
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 const pageName = db.get('pageName').value()
 ```
@@ -135,7 +135,7 @@ const pageName = db.get('pageName').value()
 
 ``` js {3}
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -303,7 +303,7 @@ this.$store.dispatch('d2admin/db/databaseClear', {
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 ```
 
@@ -315,7 +315,7 @@ const db = await this.$store.dispatch('d2admin/db/databasePage', {
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 db
   .set('pageName', 'page-1')
@@ -330,7 +330,7 @@ db
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this
+  instance: this
 })
 db.get('pageName').value() // page-1
 ```
@@ -367,7 +367,7 @@ db.get('pageName').value() // page-1
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -392,7 +392,7 @@ const db = await this.$store.dispatch('d2admin/db/databasePage', {
 
 ``` js
 this.$store.dispatch('d2admin/db/databasePageClear', {
-  vm: this
+  instance: this
 })
 ```
 
@@ -400,7 +400,7 @@ this.$store.dispatch('d2admin/db/databasePageClear', {
 
 ``` js
 this.$store.dispatch('d2admin/db/databasePageClear', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -427,7 +427,7 @@ this.$store.dispatch('d2admin/db/databasePageClear', {
 
 ``` js
 this.$store.dispatch('d2admin/db/pageSet', {
-  vm: this
+  instance: this
 })
 ```
 
@@ -440,7 +440,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 ``` js
 // 获取数据
 const data = await this.$store.dispatch('d2admin/db/pageGet', {
-  vm: this
+  instance: this
 })
 // 将数据还原到页面
 for (const key in data) {
@@ -480,7 +480,7 @@ for (const key in data) {
 
 ``` js
 this.$store.dispatch('d2admin/db/pageSet', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -490,7 +490,7 @@ this.$store.dispatch('d2admin/db/pageSet', {
 ``` js
 // 获取数据
 const data = await this.$store.dispatch('d2admin/db/pageGet', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
@@ -515,7 +515,7 @@ const data = await this.$store.dispatch('d2admin/db/pageGet', {
 
 ``` js
 this.$store.dispatch('d2admin/db/pageClear', {
-  vm: this
+  instance: this
 })
 ```
 
@@ -523,7 +523,7 @@ this.$store.dispatch('d2admin/db/pageClear', {
 
 ``` js
 this.$store.dispatch('d2admin/db/pageClear', {
-  vm: this,
+  instance: this,
   user: true
 })
 ```
