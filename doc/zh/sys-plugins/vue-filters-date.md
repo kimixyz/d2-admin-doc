@@ -1,6 +1,6 @@
 # 时间日期相关过滤器
 
-时间日期相关过滤器插件，将 [dayjs](https://github.com/iamkun/dayjs) 中可能会当做过滤器使用的方法包装为 vue 过滤器，可以在项目中直接使用。
+时间日期相关过滤器插件，将 [dayjs](https://github.com/iamkun/dayjs) 中可能会当做过滤器使用的方法包装为 vue 过滤器，安装后可以在项目中直接使用大量 dayjs 的 API 作为过滤器处理时间和日期的显示。
 
 ## 安装
 
@@ -52,10 +52,6 @@ const P = Day => {
 #### day
 
 解析为 dayjs 格式的对象。
-
-| in | out |
-| --- | --- |
-| 时间字符串 / Date 对象 / Unix 时间戳 (毫秒) | dayjs对象 |
 
 等效于：
 
