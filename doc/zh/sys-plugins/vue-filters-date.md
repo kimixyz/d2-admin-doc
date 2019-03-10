@@ -67,10 +67,6 @@ value => dayjs(value)
 
 解析为 dayjs 格式的对象。
 
-| in | out |
-| --- | --- |
-| Unix 时间戳 (秒) | dayjs对象 |
-
 等效于：
 
 ``` js
@@ -82,10 +78,6 @@ value => dayjs.unix(value)
 #### date_year
 
 获取年份。
-
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 年 |
 
 等效于：
 
@@ -103,10 +95,6 @@ Day => P(Day).year()
 
 获取月份。
 
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 月 |
-
 等效于：
 
 ``` js
@@ -122,10 +110,6 @@ Day => P(Day).month()
 #### date_date
 
 获取日期。
-
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 日 |
 
 等效于：
 
@@ -143,10 +127,6 @@ Day => P(Day).date()
 
 获取星期几。
 
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 星期 |
-
 等效于：
 
 ``` js
@@ -162,10 +142,6 @@ Day => P(Day).day()
 #### date_hour
 
 获取小时。
-
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 小时 |
 
 等效于：
 
@@ -183,10 +159,6 @@ Day => P(Day).hour()
 
 获取分钟。
 
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 分钟 |
-
 等效于：
 
 ``` js
@@ -203,10 +175,6 @@ Day => P(Day).minute()
 
 获取秒。
 
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 秒 |
-
 等效于：
 
 ``` js
@@ -222,10 +190,6 @@ Day => P(Day).second()
 #### date_millisecond
 
 获取毫秒。
-
-| in | out |
-| --- | --- |
-| dayjs 对象或者 dayjs 可解析的格式 | 毫秒 |
 
 等效于：
 
