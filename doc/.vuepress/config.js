@@ -182,6 +182,7 @@ function sideBarSysPlugins () {
       children: [
         'data-export',
         'data-import',
+        'vue-filters-date',
         'i18n',
         'mock',
         'error',

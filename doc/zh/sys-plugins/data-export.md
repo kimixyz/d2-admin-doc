@@ -2,10 +2,6 @@
 
 本框架集成了数据导出功能，并包装成插件
 
-::: tip 源代码
-[https://github.com/d2-projects/vue-table-export](https://github.com/d2-projects/vue-table-export)
-:::
-
 ## 安装
 
 ``` sh
@@ -19,10 +15,6 @@ import Vue from 'vue'
 import pluginExport from '@d2-projects/vue-table-export'
 Vue.use(pluginExport)
 ```
-
-::: tip
-如果您使用的是完整版，d2admin 已经帮您安装注册好，可以直接使用，无需写上面的代码
-:::
 
 之后就可以在组件中使用 `this.$export` 来调用导出功能
 
@@ -164,3 +156,7 @@ this.$export.txt({
 | --- | --- | --- | --- | --- | --- |
 | text | 文件内容 | 非 | String |  | 空 |
 | title | 文件名 | 非 | String |  | 文本 |
+
+::: tip 源代码
+[d2-projects/vue-table-export](https://github.com/d2-projects/vue-table-export)
+:::
