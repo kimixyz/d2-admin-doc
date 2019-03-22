@@ -1,6 +1,6 @@
 # log
 
-## state.list
+## state.log
 
 当前的日志记录
 
@@ -36,7 +36,7 @@ this.$store.getters['d2admin/log/length']
 this.$store.getters['d2admin/log/lengthError']
 ```
 
-## actions.add
+## actions.push
 
 ### 介绍
 
@@ -46,18 +46,17 @@ this.$store.getters['d2admin/log/lengthError']
 
 | 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
 | --- | --- | --- | --- | --- | --- |
-| type | 日志类型 | 非 | String | log, error | log |
-| err | 错误对象 | 非 | Error |  |  |
-| instance | vue 实例 | 非 | Object |  |  |
-| info | 信息 | 非 | String |  |  |
+| message | 日志内容 | 必选 | String |  |  |
+| type | 日志类型 | 非 | String | success, warning, info, danger | info |
+| meta | 附加信息 | 非 | Object |  | 部分系统信息，传入的值会和默认值合并 |
 
 ### 示例
 
 记录日志：
 
 ``` js
-this.$store.dispatch('d2admin/log/add', {
-  info: 'this is a log'
+this.$store.dispatch('d2admin/log/push', {
+  message: 'foo text'
 })
 ```
 
@@ -67,19 +66,52 @@ this.$store.dispatch('d2admin/log/add', {
 import store from '@/store'
 export default {
   install (Vue, options) {
-    Vue.config.errorHandler = function (err, instance, info) {
+    Vue.config.errorHandler = function (error, instance, info) {
       Vue.nextTick(() => {
-        store.dispatch('d2admin/log/add', {
-          type: 'error',
-          err,
-          instance,
-          info
+        store.dispatch('d2admin/log/push', {
+          message: `${info}: ${error.message}`,
+          type: 'danger',
+          meta: {
+            error,
+            instance
+          }
         })
       })
     }
   }
 }
 ```
+
+## mutations.push
+
+### 介绍
+
+增加日志。
+
+### 参数
+
+| 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
+| --- | --- | --- | --- | --- | --- |
+| log | 日志 | 必选 | Object |  |  |
+
+### 示例
+
+``` js
+this.$store.commit('d2admin/log/push', {
+  message: 'foo text',
+  type: 'info',
+  meta: {
+    user: 'admin',
+    uuid: 'admin-uuid',
+    token: 'admin-token',
+    url: 'http://localhost:8080'
+  }
+})
+```
+
+::: tip
+您应该使用 actions:push 而不是 mutations:push
+:::
 
 ## mutations.clean
 
