@@ -2,18 +2,22 @@
 
 时间日期相关过滤器插件，将 [dayjs](https://github.com/iamkun/dayjs) 中可能会当做过滤器使用的方法包装为 vue 过滤器，安装后可以在项目中直接使用大量 dayjs 的 API 作为过滤器处理时间和日期的显示。
 
+::: tip
+新的包名为 [@d2-admin/filters-dayjs](https://www.npmjs.com/package/@d2-admin/filters-dayjs) 原 [@d2-projects/vue-filters-date](https://www.npmjs.com/package/@d2-projects/vue-filters-date) 已经停止维护，请检查您的包名
+:::
+
 ## 安装
 
 ``` sh
-npm i @d2-projects/vue-filters-date --save
+npm i @d2-admin/filters-dayjs --save
 ```
 
 ## 导入
 
 ``` js
 import Vue from 'vue'
-import d2VueFiltersDate from '@d2-projects/vue-filters-date'
-Vue.use(d2VueFiltersDate)
+import d2VueFiltersDayjs from '@d2-admin/filters-dayjs'
+Vue.use(d2VueFiltersDayjs)
 ```
 
 ## API
