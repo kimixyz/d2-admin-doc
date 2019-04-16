@@ -18,7 +18,7 @@ D2Admin 数据持久化依赖浏览器的 LocalStorage，使用 [lowdb](https://
 
 有可能您会对如何选择持久化存储的 API 感到困惑，下图会帮助您在存储数据时，根据您的需要选择合适的存储方法：
 
-![](https://qiniucdn.fairyever.com/20180822223058.png)
+![](https://qiniucdn.fairyever.com/20190416162535.png)
 
 如果是希望读取数据，依旧遵循上图的选择条件。具体的方法介绍见本页面其它章节，具体 API 详见 [vuex db 模块](/zh/sys-vuex/db.md)
 
@@ -100,9 +100,7 @@ const myName = db.get('myName').value()
 在 **页面1** 中使用下面的代码存储一段信息：
 
 ``` js {5}
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('pageName', 'page1')
   .write()
@@ -111,9 +109,7 @@ db
 在 **页面2** 中使用同样的代码存储一段不同的信息：
 
 ``` js {5}
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('pageName', 'page2')
   .write()
@@ -122,9 +118,7 @@ db
 然后在 **页面1** 和 **页面2** 上使用完全相同的代码取值：
 
 ``` js
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 const pageName = db.get('pageName').value()
 ```
 
@@ -135,7 +129,6 @@ const pageName = db.get('pageName').value()
 
 ``` js {3}
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this,
   user: true
 })
 ```
@@ -302,9 +295,7 @@ this.$store.dispatch('d2admin/db/databaseClear', {
 使用如下代码获取公用路由存储实例：
 
 ``` js
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 ```
 
 您将获得下图所示节点（绿色高亮区域）：
@@ -314,9 +305,7 @@ const db = await this.$store.dispatch('d2admin/db/databasePage', {
 写入：
 
 ``` js
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('pageName', 'page-1')
   .write()
@@ -329,9 +318,7 @@ db
 取值：
 
 ``` js
-const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this
-})
+const db = await this.$store.dispatch('d2admin/db/databasePage')
 db.get('pageName').value() // page-1
 ```
 
@@ -367,7 +354,6 @@ db.get('pageName').value() // page-1
 
 ``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
-  instance: this,
   user: true
 })
 ```
@@ -391,16 +377,13 @@ const db = await this.$store.dispatch('d2admin/db/databasePage', {
 #### 公有
 
 ``` js
-this.$store.dispatch('d2admin/db/databasePageClear', {
-  instance: this
-})
+this.$store.dispatch('d2admin/db/databasePageClear')
 ```
 
 #### 私有
 
 ``` js
 this.$store.dispatch('d2admin/db/databasePageClear', {
-  instance: this,
   user: true
 })
 ```
@@ -514,16 +497,13 @@ const data = await this.$store.dispatch('d2admin/db/pageGet', {
 #### 公有
 
 ``` js
-this.$store.dispatch('d2admin/db/pageClear', {
-  instance: this
-})
+this.$store.dispatch('d2admin/db/pageClear')
 ```
 
 #### 私有
 
 ``` js
 this.$store.dispatch('d2admin/db/pageClear', {
-  instance: this,
   user: true
 })
 ```
