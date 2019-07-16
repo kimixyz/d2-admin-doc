@@ -8,6 +8,12 @@
 
 当前显示的多页面列表
 
+## state.openedLoaded
+
+标记已经加载多标签页数据
+
+[fixed #201](https://github.com/d2-projects/d2-admin/commit/90ab1151a24f7736276b7fa220a57f8e39c25a79)
+
 ## state.current
 
 当前页面
