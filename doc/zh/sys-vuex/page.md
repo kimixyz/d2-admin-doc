@@ -10,9 +10,7 @@
 
 ## state.openedLoaded
 
-标记已经加载多标签页数据
-
-[fixed #201](https://github.com/d2-projects/d2-admin/commit/90ab1151a24f7736276b7fa220a57f8e39c25a79)
+标记已经加载多标签页数据。
 
 ## state.current
 
@@ -21,6 +19,32 @@
 ## state.keepAlive
 
 需要缓存的页面 name 数组
+
+## actions.isLoaded
+
+### 介绍
+
+确认已经加载多标签页数据。
+
+### 参数
+
+无
+
+### 返回
+
+promise
+
+### 示例
+
+``` js
+(async function () {
+  // 这里不一定已经加载完成多标签页数据
+  await this.$store.dispatch('d2admin/page/isLoaded')
+  // 在这里确保已经加载完成多标签页数据
+})()
+```
+
+使用情景参考 [commit](https://github.com/d2-projects/d2-admin/commit/606575dbb10f6194e69b2291bdfe221240e64ab7#diff-36727cbb21483337586ca81cb95f29b4)
 
 ## actions.openedLoad
 
