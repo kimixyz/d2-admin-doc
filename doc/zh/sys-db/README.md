@@ -30,7 +30,7 @@ D2Admin 数据持久化主要有以下概念：
 
 首先请先对 [lowdb](https://github.com/typicode/lowdb) 有一定的了解，[lowdb](https://github.com/typicode/lowdb) 通过 [lodash](https://lodash.com/) 实现了对数据操作的封装，下面的例子演示了 lowdb 在浏览器中的使用方式：
 
-``` js {5}
+``` js
 import low from 'lowdb'
 import LocalStorage from 'lowdb/adapters/LocalStorage'
 
@@ -51,7 +51,7 @@ D2Admin 中的存储实例指的是上述代码中 `db` 那一步（高亮行）
 
 用户私有指不同的用户使用同一个 api 访问到的存储实例指向的存储位置，例如 A 用户使用下面的代码存储了一段信息：
 
-``` js {5}
+``` js
 const db = await this.$store.dispatch('d2admin/db/database', {
   user: true
 })
@@ -62,7 +62,7 @@ db
 
 B 用户使用下面的代码存储了一段信息：
 
-``` js {5}
+``` js
 const db = await this.$store.dispatch('d2admin/db/database', {
   user: true
 })
@@ -75,7 +75,7 @@ db
 
 然后 A 和 B 使用同样的取值代码取值：
 
-``` js {4}
+``` js
 const db = await this.$store.dispatch('d2admin/db/database', {
   user: true
 })
@@ -99,7 +99,7 @@ const myName = db.get('myName').value()
 
 在 **页面1** 中使用下面的代码存储一段信息：
 
-``` js {5}
+``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('pageName', 'page1')
@@ -108,7 +108,7 @@ db
 
 在 **页面2** 中使用同样的代码存储一段不同的信息：
 
-``` js {5}
+``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage')
 db
   .set('pageName', 'page2')
@@ -127,7 +127,7 @@ const pageName = db.get('pageName').value()
 ::: tip
 “路由存储”同时也支持“用户私有”，您可以将两者结合使用，使用下面的代码即可获得用户私有的路由存储：
 
-``` js {3}
+``` js
 const db = await this.$store.dispatch('d2admin/db/databasePage', {
   user: true
 })
