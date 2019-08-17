@@ -55,6 +55,7 @@ module.exports = {
               { text: '菜单', link: '/zh/sys-menu/' },
               { text: '异步请求', link: '/zh/sys-ajax/' },
               { text: '多页面', link: '/zh/sys-multi-page/' },
+              { text: '国际化', link: '/zh/sys-locales/' },
               { text: '数据持久化', link: '/zh/sys-db/' },
               { text: 'CSS 实用类', link: '/zh/sys-css/' },
               { text: 'JS Util', link: '/zh/sys-util/' },
