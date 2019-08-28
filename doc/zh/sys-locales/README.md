@@ -352,3 +352,16 @@ export default {
 ![](https://qiniucdn.fairyever.com/mweb/15670002094044.jpg)
 
 此部分**非广告内容**，属于我个人购买正版使用一段时间之后的心得推荐。此软件 ￥158 / 用户，如有需要请直接官网购买。
+
+## 附注
+
+这里给出一份曾经使用过的配置，后来取消了这些语言设置是因为考虑到实际中小项目是不需要多语言的，这些代码在项目中反而会造成一些改动时的困扰，所以保留一个随时可以使用 i18n 的状态，但是不内置语言配置，需要的话请自行添加翻译。
+
+使用参考 [d2-admin/tree/54b8de550c9bc7a318bfa7014faa0b208b7e7c51](https://github.com/d2-projects/d2-admin/tree/54b8de550c9bc7a318bfa7014faa0b208b7e7c51)
+
+点击下面的链接可以直达当时的语言配置文件：
+
+* [en.json](https://github.com/d2-projects/d2-admin/blob/54b8de550c9bc7a318bfa7014faa0b208b7e7c51/src/locales/en.json)
+* [ja.json](https://github.com/d2-projects/d2-admin/blob/54b8de550c9bc7a318bfa7014faa0b208b7e7c51/src/locales/ja.json)
+* [zh-chs.json](https://github.com/d2-projects/d2-admin/blob/54b8de550c9bc7a318bfa7014faa0b208b7e7c51/src/locales/zh-chs.json)
+* [zh-cht.json](https://github.com/d2-projects/d2-admin/blob/54b8de550c9bc7a318bfa7014faa0b208b7e7c51/src/locales/zh-cht.json)
