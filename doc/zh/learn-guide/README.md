@@ -31,12 +31,6 @@ D2Admin 是一个完全 **开源免费** 的企业中后台产品前端集成方
 [码云仓库](https://gitee.com/fairyever/d2-admin-start-kit) | 
 [预览地址](https://start-kit.d2admin.fairyever.com)
 
-**飞冰物料**
-
-[D2Admin ICE](https://alibaba.github.io/ice/scaffold?type=vue) | 
-[介绍](https://juejin.im/post/5b6349716fb9a04f834669d6) | 
-[预览地址](https://fairyever.gitee.io/d2-admin-ice-preview)
-
 ## 功能
 
 * 使用 vue-cli3 构建
