@@ -8,11 +8,7 @@ sidebar: auto
 
 本项目国际化依赖插件 [vue-i18n](http://kazupon.github.io/vue-i18n/zh/)
 
-> Vue I18n 是 Vue.js 的国际化插件
-
 ## 安装
-
-> 项目中已经安装完成，可以直接使用
 
 D2Admin 使用 Vue Cli 3.x 构建，所以使用下面的安装方式：
 
@@ -20,9 +16,13 @@ D2Admin 使用 Vue Cli 3.x 构建，所以使用下面的安装方式：
 vue add i18n
 ```
 
-安装完毕之后删除生成的一些无用文件。
+安装完毕之后删除生成的一些无用文件。项目中已经安装完成，可以直接使用。
 
 ## 配置
+
+如果您不是想自己在项目中安装，可以略过这一节。
+
+下面的演示代码不一定在后面的某个时间更新，最新的代码以您阅读时[仓库](https://github.com/d2-projects/d2-admin)中代码为准，您可以点击下面的链接跳转到仓库查看。
 
 * [.env](https://github.com/d2-projects/d2-admin/blob/master/.env)
 
@@ -84,7 +84,7 @@ export default new VueI18n({
 
 * [src/main.js](https://github.com/d2-projects/d2-admin/blob/master/src/main.js)
 
-``` js {7}
+``` js
 import Vue from 'vue'
 import i18n from './i18n'
 
@@ -178,9 +178,32 @@ export default {
 </script>
 ```
 
-> 别忘了在 [src/layout/header-aside/layout.vue](https://github.com/d2-projects/d2-admin/blob/master/src/layout/header-aside/layout.vue) 中加入上面这个新的组件 
+别忘了在 [src/layout/header-aside/layout.vue](https://github.com/d2-projects/d2-admin/blob/master/src/layout/header-aside/layout.vue) 中加入上面这个新的组件，示例：
 
-如果你需要在登录页面添加语言切换，可以参考 [src/views/system/login/page.vue](https://github.com/d2-projects/d2-admin/blob/master/src/views/system/login/page.vue)
+``` vue {6,14-19}
+<template>
+  <div class="d2-layout-header-aside-group">
+    ...
+    <div class="d2-header-right" flex-box="0">
+      ...
+      <d2-header-locales/>
+      ...
+    </div>
+    ...
+  </div>
+</template>
+
+<script>
+import d2HeaderLocales from './components/header-locales'
+export default {
+  components: {
+    d2HeaderLocales
+  }
+}
+</script>
+```
+
+如果您需要在登录页面添加语言切换，可以参考 [src/views/system/login/page.vue](https://github.com/d2-projects/d2-admin/blob/master/src/views/system/login/page.vue)
 
 ``` html {3-9}
 <div class="page-login--content-footer">
@@ -195,3 +218,86 @@ export default {
   </p>
 </div>
 ```
+
+最后，别忘了 [src/locales](https://github.com/d2-projects/d2-admin/tree/master/src/locales) 文件夹。
+
+* locales
+  * 英语 [en.json](https://github.com/d2-projects/d2-admin/blob/master/src/locales/en.json)
+  * 日语 [ja.json](https://github.com/d2-projects/d2-admin/blob/master/src/locales/ja.json)
+  * 简体中文 [zh-chs.json](https://github.com/d2-projects/d2-admin/blob/master/src/locales/zh-chs.json)
+  * 繁体中文 [zh-cht.json](https://github.com/d2-projects/d2-admin/blob/master/src/locales/zh-cht.json)
+
+关于这个文件夹的内容会在下面的章节介绍。
+
+## 使用
+
+完整的使用方式见 [Vue I18n 文档](http://kazupon.github.io/vue-i18n/zh/guide/formatting.html)。D2Admin 中使用的是其最基础的使用方式。
+
+在项目中一切配置都已经为您准备好，您只需修改 [src/locales](https://github.com/d2-projects/d2-admin/tree/master/src/locales) 中的配置内容和使用即可。
+
+::: tip 注意
+`_name` 字段是保留的，请不要修改它
+:::
+
+下面以在页面中显示多国语言的 `你好` 为例：
+
+* en.json
+
+``` json
+{
+  "_name": "English",
+  "hello": "Hello"
+}
+```
+
+* ja.json
+
+``` json
+{
+  "_name": "日本語",
+  "hello": "こんにちは"
+}
+```
+
+* zh-chs.json
+
+``` json
+{
+  "_name": "简体中文",
+  "hello": "你好"
+}
+```
+
+* zh-cht.json
+
+``` json
+{
+  "_name": "繁體中文",
+  "hello": "你好"
+}
+```
+
+在单文件组件中使用：
+
+``` vue
+<template>
+  <div>
+    {{$t('hello')}}
+  </div>
+</template>
+
+<script>
+  mounted () {
+    console.log(this.$t('hello'))
+  }
+}
+</script>
+```
+
+页面将在不同的语言环境下显示和输出不同的文字内容。
+
+## 进阶
+
+如果您有条件，我非常推荐你尝试使用 [BabelEdit](https://www.codeandweb.com/babeledit-vue) 来提高您的国际化翻译效率。（￥158 / user）
+
+此部分非广告内容，属于我个人购买正版使用后的心得推荐。
