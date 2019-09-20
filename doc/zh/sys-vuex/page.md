@@ -66,7 +66,7 @@ promise
 this.$store.dispatch('d2admin/page/openedLoad')
 ```
 
-## actions.opend2db
+## actions.opened2db
 
 ### 介绍
 
@@ -87,7 +87,7 @@ promise
 ### 示例
 
 ``` js
-this.$store.dispatch('d2admin/page/opend2db')
+this.$store.dispatch('d2admin/page/opened2db')
 ```
 
 ## actions.openedUpdate
