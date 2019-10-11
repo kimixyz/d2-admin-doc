@@ -1,7 +1,7 @@
 {
   "src_dir"            :   "/home/travis/build/d2-projects/d2-admin-doc/doc/.vuepress/dist",
-  "bucket"             :   "d2-admin",
-  "key_prefix"         :   "doc/",
+  "bucket"             :   "fairyever-site",
+  "key_prefix"         :   "d2-admin/doc/",
   "ignore_dir"         :   false,
   "overwrite"          :   true,
   "check_exists"       :   true,
