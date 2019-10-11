@@ -213,7 +213,7 @@ D2Admin ICE 将会保持和 D2Admin Start Kit 一致更新，如果你看到完�
 | [D2Admin 完整版 预览地址](https://fairyever.com/d2-admin/preview/#/index) | 完整版 预览地址 |
 | [D2Admin 完整版 github](https://github.com/d2-projects/d2-admin) | 完整版 Github 仓库 |
 | [D2Admin 完整版 码云](https://gitee.com/fairyever/d2-admin) | 完整版 码云镜像仓库 |
-| [D2Admin 简化版 预览地址](https://start-kit.d2admin.fairyever.com) | 简化版 预览地址 |
+| [D2Admin 简化版 预览地址](https://fairyever.com/d2-admin-start-kit/preview/) | 简化版 预览地址 |
 | [D2Admin 简化版 github](https://github.com/d2-projects/d2-admin-start-kit) | 简化版 Github 仓库 |
 | [D2Admin 简化版 码云](https://gitee.com/fairyever/d2-admin-start-kit) | 简化版 码云镜像仓库 |
 
