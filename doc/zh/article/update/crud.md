@@ -6,7 +6,7 @@ D2 Crud，一款简单易用的表格组件
 
 GitHub：<https://github.com/d2-projects/d2-crud>
 
-文档：<https://fairyever.com/d2-admin/doc//zh/ecosystem-d2-crud/>
+文档：<https://fairyever.com/d2-admin/doc/zh/ecosystem-d2-crud/>
 
 示例：<https://d2admin.fairyever.com/#/demo/d2-crud/index>
 

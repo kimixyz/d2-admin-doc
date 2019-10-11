@@ -693,7 +693,7 @@ export default {
 | --- | --- |
 | [掘金专栏](https://juejin.im/user/57a48b632e958a006691b946/posts) | 掘金专栏 |
 | [团队主页](https://github.com/d2-projects) | 开源团队主页 |
-| [D2Admin 中文文档](https://fairyever.com/d2-admin/doc//zh/) | 中文文档 |
+| [D2Admin 中文文档](https://fairyever.com/d2-admin/doc/zh/) | 中文文档 |
 | [D2Admin 预览地址](https://d2admin.fairyever.com/) | 完整版 预览地址 |
 | [D2Admin github](https://github.com/d2-projects/d2-admin) | 完整版 Github 仓库 |
 | [ElementUI](http://element.eleme.io/#/zh-CN) | ElementUI 组件库 |
