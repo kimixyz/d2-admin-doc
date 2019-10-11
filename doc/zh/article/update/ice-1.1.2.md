@@ -210,7 +210,7 @@ D2Admin ICE 将会保持和 D2Admin Start Kit 一致更新，如果你看到完�
 | --- | --- |
 | [团队主页](https://github.com/d2-projects) | D2Admin 所属的团队主页 |
 | [中文文档](https://fairyever.com/d2-admin/doc/zh/) | 中文文档 |
-| [D2Admin 完整版 预览地址](https://d2admin.fairyever.com/#/index) | 完整版 预览地址 |
+| [D2Admin 完整版 预览地址](https://fairyever.com/d2-admin/preview/#/index) | 完整版 预览地址 |
 | [D2Admin 完整版 github](https://github.com/d2-projects/d2-admin) | 完整版 Github 仓库 |
 | [D2Admin 完整版 码云](https://gitee.com/fairyever/d2-admin) | 完整版 码云镜像仓库 |
 | [D2Admin 简化版 预览地址](https://start-kit.d2admin.fairyever.com) | 简化版 预览地址 |

@@ -31,7 +31,7 @@ $store.commit('d2admin/page/poolSet', pool)
 
 ## 页面缓存
 
-[页面打开缓存的效果](https://d2admin.fairyever.com/#/demo/playground/page-cache/on) | [页面关闭缓存的效果](https://d2admin.fairyever.com/#/demo/playground/page-cache/off)
+[页面打开缓存的效果](https://fairyever.com/d2-admin/preview/#/demo/playground/page-cache/on) | [页面关闭缓存的效果](https://fairyever.com/d2-admin/preview/#/demo/playground/page-cache/off)
 
 要实现页面缓存需要同时满足以下两个条件：
 
