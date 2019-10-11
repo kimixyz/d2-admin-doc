@@ -67,7 +67,6 @@ module.exports = {
             text: '生态',
             items: [
               { text: 'D2 Admin start kit', link: '/zh/ecosystem-d2-admin-start-kit/' },
-              { text: 'D2 Admin ICE', link: '/zh/ecosystem-d2-admin-ice/' },
               { text: 'D2 CRUD 2.x', link: '/zh/ecosystem-d2-crud/' },
               { text: 'D2 CRUD 1.x', link: '/zh/ecosystem-d2-crud-v1/' },
               { text: 'D2 Ribbons', link: '/zh/ecosystem-d2-ribbons/' },
@@ -102,7 +101,6 @@ module.exports = {
                 items: [
                   { text: 'awesome-vue', link: 'https://github.com/vuejs/awesome-vue' },
                   { text: 'ant design scaffolds', link: 'http://scaffold.ant.design/#/scaffolds/d2-admin' },
-                  { text: 'ice vue scaffold', link: 'https://alibaba.github.io/ice/scaffold?type=vue' },
                   { text: 'awesomes.cn', link: 'https://www.awesomes.cn/repo/d2-projects/d2-admin' },
                   { text: 'oschina.net', link: 'https://www.oschina.net/p/D2admin' },
                   { text: 'ctolib.com', link: 'https://www.ctolib.com/FairyEver-d2-admin.html' }
@@ -236,7 +234,6 @@ function sideBarArticle (titleUpdate, titleCookbook, titleNote) {
       children: [
         'update/crud',
         'update/1.2.0',
-        'update/ice-1.1.2',
         'update/1.1.5',
         'update/1.1.4',
         'update/0.0.0',
