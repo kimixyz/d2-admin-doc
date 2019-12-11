@@ -27,7 +27,7 @@ jobs:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        METHOD: SFTP
+        METHOD: sftp
         PORT: 22
         LOCAL_DIR: doc
         REMOTE_DIR: www
