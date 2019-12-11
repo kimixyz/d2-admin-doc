@@ -28,7 +28,7 @@ jobs:
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         METHOD: sftp
-        PORT: 22
+        PORT: ${{ secrets.FTP_PORT }}
         LOCAL_DIR: doc/.vuepress/dist
         REMOTE_DIR: /www/d2-admin/doc
         ARGS: --delete --verbose --parallel=100
