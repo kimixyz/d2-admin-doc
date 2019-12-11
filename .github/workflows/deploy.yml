@@ -29,6 +29,6 @@ jobs:
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         METHOD: sftp
         PORT: 22
-        LOCAL_DIR: doc
-        REMOTE_DIR: www
+        LOCAL_DIR: doc/.vuepress/dist
+        REMOTE_DIR: /www/doc
         ARGS: --verbose
