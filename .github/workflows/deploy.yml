@@ -1,0 +1,34 @@
+name: Build and upload to qiniu CDN
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Build Project
+      run: |
+        npm install
+        npm run build
+    - name: List output files
+      run: ls
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        METHOD: sftp
+        PORT: 7280
+        LOCAL_DIR: /doc/.vuepress/dist
+        REMOTE_DIR: /www
+        ARGS: --delete
