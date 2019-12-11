@@ -30,5 +30,5 @@ jobs:
         METHOD: sftp
         PORT: 22
         LOCAL_DIR: doc/.vuepress/dist
-        REMOTE_DIR: /www/doc
-        ARGS: --verbose
+        REMOTE_DIR: /www/d2-admin/doc
+        ARGS: --delete --verbose --parallel=10
