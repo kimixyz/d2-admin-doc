@@ -1,4 +1,4 @@
-name: Build and upload to qiniu CDN
+name: Deploy
 
 on:
   push:
@@ -7,21 +7,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: Build Project
+    - name: Build
       run: |
         npm install
         npm run build
-    - name: List output files
-      run: ls
-    - name: FTP-Deploy-Action
+    - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
