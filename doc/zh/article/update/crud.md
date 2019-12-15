@@ -6,9 +6,9 @@ D2 Crud，一款简单易用的表格组件
 
 GitHub：<https://github.com/d2-projects/d2-crud>
 
-文档：<https://fairyever.com/d2-admin/doc/zh/ecosystem-d2-crud/>
+文档：<https://d2.pub/zh/doc/d2-crud-v2>
 
-示例：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/index>
+示例：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/index>
 
 > 示例部署在 Github Pages 如果您的网络不太好（示例项目中包含大量示例，体积较大），请完整克隆 [项目](https://github.com/d2-projects/d2-admin) 在本地启动。
 
@@ -122,23 +122,23 @@ export default {
 
 ### 新增数据
 ![新增数据](https://user-gold-cdn.xitu.io/2018/9/3/1659d305eb1d45f3?w=1424&h=750&f=gif&s=835367)
-演示地址：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/demo16>
+演示地址：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/demo16>
 
 ### 修改数据
 ![修改数据](https://user-gold-cdn.xitu.io/2018/9/3/1659d305e0cb4af7?w=1424&h=750&f=gif&s=581016)
-演示地址：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/demo17>
+演示地址：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/demo17>
 
 ### 删除数据
 ![删除数据](https://user-gold-cdn.xitu.io/2018/9/3/1659d305de0680b3?w=1424&h=750&f=gif&s=716098)
-演示地址：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/demo18>
+演示地址：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/demo18>
 
 ### 表单校验
 ![表单校验](https://user-gold-cdn.xitu.io/2018/9/3/1659d305e444175d?w=1424&h=750&f=gif&s=402618)
-演示地址：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/demo22>
+演示地址：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/demo22>
 
 ### 表格内编辑
 ![表格内编辑](https://user-gold-cdn.xitu.io/2018/9/3/1659d305e23181ac?w=1424&h=750&f=gif&s=382246)
-演示地址：<https://fairyever.com/d2-admin/preview/#/demo/d2-crud/demo23>
+演示地址：<https://d2.pub/d2-admin/preview/#/demo/d2-crud/demo23>
 
 ## 代码对比
 
